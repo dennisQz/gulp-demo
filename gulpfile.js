@@ -5,23 +5,11 @@
 */
 var gulp = require('gulp');
 var sass = require('gulp-sass');
-var uglify = require('gulp-uglify');
 
 gulp.task('sass', function() {
-    gulp.src('client/scss/*.scss')
+    gulp.src('asset/scss/**')
         .pipe(sass())
-        .pipe(gulp.dest('build/css'));
-});
-
-gulp.task('scripts', function() {
-  // Minify and copy all JavaScript (except vendor scripts)
-  gulp.src(['client/js/**/*.js', '!client/js/vendor/**'])
-    .pipe(uglify())
-    .pipe(gulp.dest('build/js'));
-    
-  // Copy vendor files
-  gulp.src('client/js/vendor/**')
-    .pipe(gulp.dest('build/js/vendor'));
+        .pipe(gulp.dest('dist/css/'));
 });
 
 // The default task (called when you run `gulp`)
@@ -29,7 +17,7 @@ gulp.task('default', function() {
   gulp.run('sass');
 
   gulp.watch([
-    'client/scss/**'
+    'asset/scss/**'
   ], function(event) {
     gulp.run('sass');
   });
