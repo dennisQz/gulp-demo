@@ -1,0 +1,13 @@
+{
+  "name": "gulp-demo",
+  "version": "0.1.0",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-jshint": "^2.0.1",
+    "gulp-sass": "^2.3.2",
+    "gulp-scss": "latest",
+    "gulp-uglify": "latest",
+    "jshint": "^2.9.2"
+  }
+}
