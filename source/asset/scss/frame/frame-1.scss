@@ -1,0 +1,23 @@
+$text-color: #34495e !default;
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    line-height: normal;
+    background: #fff;
+    color: $text-color;
+}
+.header{
+    font-size:18px;
+    &:hover{
+        font-size: 12px;
+    }
+    .logo{
+        display: block;
+        border: none;
+    }
+    ul li{
+        line-break: normal;
+    }
+}
