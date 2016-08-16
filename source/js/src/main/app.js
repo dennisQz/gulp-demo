@@ -1,6 +1,9 @@
-define( function(Controller) {
+define(["src/customer/main"], function( Customer ) {
 
-
-            console.log("start")
-       
+    return {
+        init : function () {
+            console.log("start...")
+            new Customer();
+        }
+    }
 });
