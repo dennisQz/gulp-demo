@@ -12,8 +12,8 @@ var concat = require('gulp-concat');
 var rename = require('gulp-rename');
 
 // 打包
-var gbExcludeArr = ['jquery','underscore','backbone','text'];
 var rjs = require('requirejs');
+var gbExcludeArr = ['jquery','underscore','backbone','text'];
 gulp.task('optimize', function(cb){
   rjs.optimize({
     /*appDir: '/gulp-demo',*/
